@@ -7,11 +7,11 @@ from functions.DLRRPD import DLRRPD
 import scipy.io as sio
 # 读取数据
 # 读取.mat文件
-#mat_contents = sio.loadmat('other_data/auto_uni.mat')
+mat_contents = sio.loadmat('other_data/auto_uni.mat')
 # 假设数据存储在键 'data' 下
-#train_data = mat_contents['X']
+train_data = mat_contents['X']
 
-train_data=np.loadtxt('TE_data/train_data/d00.dat')
+#train_data=np.loadtxt('TE_data/train_data/d00.dat')
 
 if train_data.shape[0] < train_data.shape[1]:
     train_data = train_data.T
